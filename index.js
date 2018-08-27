@@ -18,7 +18,7 @@
 // Dizemos que T(n) é Θ(f(n)) se existem constantes positivas "c1" e "c2" e "n0" tais que:
 // c1 f(n) <= T(n) <= c2 f(n) para todo n >= n0.
 
-const isEvenNumber = n => n % 2 === 0
+const isEvenNumber = number => number % 2 === 0
 
 const generateNumber = max => Math.floor(Math.random() * max) + 1
 
