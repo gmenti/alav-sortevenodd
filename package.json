@@ -1,0 +1,12 @@
+{
+  "name": "algo-avancados-20082018",
+  "version": "1.0.0",
+  "description": "Exercicios do dia 20/08/2018 da disciplica de Algoritmos Avançados, ministrada pelo Prof. Michael da Costa Móra.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giuseppe Menti <giuseppe.menti@acad.pucrs.br>",
+  "license": "ISC"
+}
