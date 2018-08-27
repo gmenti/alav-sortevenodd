@@ -1,22 +1,24 @@
-// Notação Oh O
-// O(f(n)) intuitivamente são funções que não crescem mais rápido que f(n).
-// Apresenta o pior caso de um algoritmo.
-// Sejam T(n) e f(n) funções dos inteiros reais. 
-// Dizemos que T(n) é O(f(n)) se existem constantes positivas e "c" e "n0" tais que:
-// T(n) <= c f(n) para todo n >= n0.
+/**
+  Notação Oh O
+  O(f(n)) intuitivamente são funções que não crescem mais rápido que f(n).
+  Apresenta o pior caso de um algoritmo.
+  Sejam T(n) e f(n) funções dos inteiros reais. 
+  Dizemos que T(n) é O(f(n)) se existem constantes positivas e "c" e "n0" tais que:
+  T(n) <= c f(n) para todo n >= n0.
 
-// Notação Ômega Ω
-// Ω(f(n)) intuitivamente são funções que crescem mais rápido que f(n).
-// Apresenta o melhor caso de um algoritmo.
-// Sejam T(n) e f(n) funções dos inteiros reais. 
-// Dizemos que T(n) é Ω(f(n)) se existem constantes positivas e "c" e "n0" tais que:
-// T(n) >= c f(n) para todo n >= n0.
+  Notação Ômega Ω
+  Ω(f(n)) intuitivamente são funções que crescem mais rápido que f(n).
+  Apresenta o melhor caso de um algoritmo.
+  Sejam T(n) e f(n) funções dos inteiros reais. 
+  Dizemos que T(n) é Ω(f(n)) se existem constantes positivas e "c" e "n0" tais que:
+  T(n) >= c f(n) para todo n >= n0.
 
-// Notação Theta Θ
-// Θ(f(n)) intuitivamente são funções
-// Sejam T(n) e f(n) funções dos inteiros reais. 
-// Dizemos que T(n) é Θ(f(n)) se existem constantes positivas "c1" e "c2" e "n0" tais que:
-// c1 f(n) <= T(n) <= c2 f(n) para todo n >= n0.
+  Notação Theta Θ
+  Θ(f(n)) intuitivamente são funções
+  Sejam T(n) e f(n) funções dos inteiros reais. 
+  Dizemos que T(n) é Θ(f(n)) se existem constantes positivas "c1" e "c2" e "n0" tais que:
+  c1 f(n) <= T(n) <= c2 f(n) para todo n >= n0.
+*/
 
 const isEvenNumber = number => number % 2 === 0
 
@@ -47,7 +49,6 @@ const generateVector = (evenAmount, oddAmount, maxVectorNumber) => {
 }
 
 // Método solicitado no exercício "separaParImpar" utilizando vetor auxiliar.
-// O(n * 2)
 const sortEvenOddWithAuxVector = vector => vector
   .filter(isEvenNumber)
   .concat(
@@ -55,7 +56,8 @@ const sortEvenOddWithAuxVector = vector => vector
   )
 
 // Método solicitado no exercício "separaParImpar" sem utilizar vetor auxiliar.
-// O(n)
+
+
 const sortEvenOddWithoutAuxVector = vector => {
   let lastPar = -1
   let lastImpar = vector.length
